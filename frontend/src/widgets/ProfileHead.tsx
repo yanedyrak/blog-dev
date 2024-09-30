@@ -2,25 +2,7 @@ import { ArrowLeft, CalendarDays } from "lucide-react";
 import { VerifiedProfileSVG } from "../shared/svg/VerifiedProfileSVG";
 import clsx from "clsx";
 import { useLocation } from "react-router-dom";
-
-const links = [
-  {
-    title: "Posts",
-    path: "/",
-  },
-  {
-    title: "About",
-    path: "/f",
-  },
-  {
-    title: "Following",
-    path: "/f",
-  },
-  {
-    title: "Followers",
-    path: "/f",
-  },
-];
+import { ProfileHeadLinks } from "../shared/constants/ProfileHeadLinks";
 export const ProfileHead = () => {
   const { pathname } = useLocation();
   return (
@@ -72,7 +54,7 @@ export const ProfileHead = () => {
             </div>
           </div>
           <div className="flex mt-5">
-            {links.map((link, index) => (
+            {ProfileHeadLinks.map((link, index) => (
               <button
                 key={index}
                 className={clsx(

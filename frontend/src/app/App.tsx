@@ -1,15 +1,9 @@
-import { FollowProfile } from "../entities/FollowProfile";
-import { Routers } from "./Routers";
-import { NavbarProfile } from "../entities/NavbarProfile";
-import { ProfileHead } from "../widgets/ProfileHead";
+import { Post } from "../widgets/Post";
 
 function App() {
   return (
     <>
-      <Routers />
-      <FollowProfile />
-      <NavbarProfile />
-      <ProfileHead />
+      <Post />
     </>
   );
 }
