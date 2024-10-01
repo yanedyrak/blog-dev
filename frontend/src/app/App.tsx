@@ -1,9 +1,7 @@
-import { Post } from "../widgets/Post";
-
 function App() {
   return (
     <>
-      <Post />
+      <p>1</p>
     </>
   );
 }

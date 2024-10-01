@@ -3,10 +3,11 @@ import { VerifiedProfileSVG } from "../shared/svg/VerifiedProfileSVG";
 import clsx from "clsx";
 import { useLocation } from "react-router-dom";
 import { ProfileHeadLinks } from "../shared/constants/ProfileHeadLinks";
+import { SubscribeArea } from "./SubscribeArea";
 export const ProfileHead = () => {
   const { pathname } = useLocation();
   return (
-    <div className="max-w-[600px]">
+    <div className="flex flex-grow flex-col ml-64">
       <div className="bg-black flex px-5 py-2 gap-5 flex-center">
         <button className="p-2 rounded-full duration-300 hover:bg-zinc-900">
           <ArrowLeft color="white" />
@@ -74,6 +75,9 @@ export const ProfileHead = () => {
           </div>
         </div>
       </div>
+      <SubscribeArea />
+      <SubscribeArea />
+      <SubscribeArea />
     </div>
   );
 };
