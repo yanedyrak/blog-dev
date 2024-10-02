@@ -1,13 +1,11 @@
 import { ArrowLeft, CalendarDays } from "lucide-react";
 import { VerifiedProfileSVG } from "../shared/svg/VerifiedProfileSVG";
-import clsx from "clsx";
-import { useLocation } from "react-router-dom";
 import { ProfileHeadLinks } from "../shared/constants/ProfileHeadLinks";
-import { SubscribeArea } from "./SubscribeArea";
+
+import { LinkWithBlueDecoration } from "../shared/ui/LinkWithBlueDecoration";
 export const ProfileHead = () => {
-  const { pathname } = useLocation();
   return (
-    <div className="flex flex-grow flex-col ml-64">
+    <div className="flex flex-grow flex-col border-r-[1px] border-white border-opacity-30 ">
       <div className="bg-black flex px-5 py-2 gap-5 flex-center">
         <button className="p-2 rounded-full duration-300 hover:bg-zinc-900">
           <ArrowLeft color="white" />
@@ -56,28 +54,15 @@ export const ProfileHead = () => {
           </div>
           <div className="flex mt-5">
             {ProfileHeadLinks.map((link, index) => (
-              <button
+              <LinkWithBlueDecoration
                 key={index}
-                className={clsx(
-                  "font-light text-base p-3 flex-grow duration-300 hover:bg-zinc-900 relative",
-                  {
-                    "text-white": pathname === link.path,
-                    "text-gray-400 ": pathname !== link.path,
-                  }
-                )}
-              >
-                {pathname === link.path ? (
-                  <div className="w-[60%] h-1 bg-blue-500 rounded-3xl absolute bottom-0 left-1/2 transform -translate-x-1/2"></div>
-                ) : null}
-                {link.title}
-              </button>
+                adress={link.path}
+                title={link.title}
+              />
             ))}
           </div>
         </div>
       </div>
-      <SubscribeArea />
-      <SubscribeArea />
-      <SubscribeArea />
     </div>
   );
 };

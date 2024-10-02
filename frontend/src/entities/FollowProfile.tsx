@@ -1,7 +1,7 @@
 import { VerifiedProfileSVG } from "../shared/svg/VerifiedProfileSVG";
 export const FollowProfile = () => {
   return (
-    <div className="flex items-center justify-between max-w-96">
+    <div className="flex items-center justify-between">
       <div className="flex gap-2 items-center">
         <div className="w-10 h-10 bg-red-500 rounded-full"></div>
         <div className="flex flex-col">
