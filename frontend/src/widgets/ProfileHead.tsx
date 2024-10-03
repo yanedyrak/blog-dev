@@ -3,9 +3,10 @@ import { VerifiedProfileSVG } from "../shared/svg/VerifiedProfileSVG";
 import { ProfileHeadLinks } from "../shared/constants/ProfileHeadLinks";
 
 import { LinkWithBlueDecoration } from "../shared/ui/LinkWithBlueDecoration";
+
 export const ProfileHead = () => {
   return (
-    <div className="flex flex-grow flex-col border-r-[1px] border-white border-opacity-30 ">
+    <div className="flex flex-grow flex-col border-b-[1px] border-white border-opacity-30 overflow-hidden ">
       <div className="bg-black flex px-5 py-2 gap-5 flex-center">
         <button className="p-2 rounded-full duration-300 hover:bg-zinc-900">
           <ArrowLeft color="white" />
@@ -15,7 +16,7 @@ export const ProfileHead = () => {
           <p className="text-gray-400 font-light text-sm">0 posts</p>
         </div>
       </div>
-      <div className="h-56 bg-gray-500"></div>
+      <div className="h-56 bg-zinc-900"></div>
       <div className="flex flex-col gap-2">
         <div className="p-5 flex relative justify-between">
           <div></div>
