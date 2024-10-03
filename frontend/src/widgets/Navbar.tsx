@@ -10,7 +10,7 @@ export const Navbar = () => {
     <nav className="fixed text-white flex min-h-screen flex-col w-64 p-5 border-r-[1px] border-white border-opacity-30">
       <Cherry size={30} />
       <div className="flex flex-grow flex-col justify-between">
-        <div className="py-7 flex flex-col gap-9">
+        <div className="py-7 flex flex-col gap-[1.5vw]">
           {headerLinks.map((link) => (
             <Link
               to={link.link}
@@ -21,7 +21,6 @@ export const Navbar = () => {
               }
               key={link.name}
             >
-              //1
               {pathname === link.link ? link.filledIcon : link.icon}
               <span>{link.name}</span>
             </Link>
@@ -36,5 +35,3 @@ export const Navbar = () => {
     </nav>
   );
 };
-
-// 2

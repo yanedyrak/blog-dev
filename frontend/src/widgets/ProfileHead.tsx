@@ -20,7 +20,7 @@ export const ProfileHead = () => {
       <div className="flex flex-col gap-2">
         <div className="p-5 flex relative justify-between">
           <div></div>
-          <div className="w-36 h-36 bg-red-500 border-[5px] border-black rounded-full absolute -top-16 cursor-pointer duration-300 hover:brightness-75"></div>
+          <div className="w-36 h-36 bg-slate-500 border-[5px] border-black rounded-full absolute -top-16 cursor-pointer duration-300 hover:brightness-75"></div>
           <button className="font-bold px-5 py-2 border-[1px] text-white rounded-3xl duration-300 hover:brightness-75">
             Edit profile
           </button>

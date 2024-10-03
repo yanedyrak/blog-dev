@@ -11,5 +11,3 @@ export const Profile = () => {
     </div>
   );
 };
-
-// 1
