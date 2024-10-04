@@ -1,7 +1,6 @@
 import {
   Bell,
   Bookmark,
-  BriefcaseBusiness,
   CircleEllipsis,
   HomeIcon,
   Mail,
@@ -41,12 +40,7 @@ export const headerLinks = [
     icon: <Bookmark size={30} />,
     filledIcon: <Bookmark size={30} fill="white" />,
   },
-  {
-    name: "Jobs",
-    link: "/jobs",
-    icon: <BriefcaseBusiness size={30} />,
-    filledIcon: <BriefcaseBusiness size={30} fill="white" stroke="black" />,
-  },
+
   {
     name: "Communities",
     link: "/communities",

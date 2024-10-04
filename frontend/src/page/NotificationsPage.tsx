@@ -1,12 +1,12 @@
-import { Search } from "lucide-react";
 import { NotificationSample } from "../entities/NotificationSample";
 import { WhoToFollow } from "../entities/WhoToFollow";
 import { NotificationHead } from "../widgets/NotificationHead";
 import { SubscribeArea } from "../widgets/SubscribeArea";
+import { Search } from "../shared/ui/Search";
 export const NotificationsPage = () => {
   return (
     <>
-      <div className="border-r-[1px] border-white border-opacity-30 min-h-screen">
+      <div className="border-x-[1px] border-white border-opacity-30 min-h-screen">
         <NotificationHead />
         <NotificationSample />
       </div>

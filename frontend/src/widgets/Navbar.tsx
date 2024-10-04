@@ -1,4 +1,4 @@
-import { Cherry } from "lucide-react";
+import { X } from "lucide-react";
 import { headerLinks } from "../shared/constants/HeaderLinks";
 import { Link, useLocation } from "react-router-dom";
 import { NavbarProfile } from "../entities/NavbarProfile";
@@ -7,8 +7,8 @@ export const Navbar = () => {
   const { pathname } = useLocation();
 
   return (
-    <nav className="fixed text-white flex min-h-screen flex-col w-64 p-5 border-r-[1px] border-white border-opacity-30">
-      <Cherry size={30} />
+    <nav className="fixed text-white flex min-h-screen flex-col w-64 p-5">
+      <X fill="white" size={50} />
       <div className="flex flex-grow flex-col justify-between">
         <div className="py-7 flex flex-col gap-[1.5vw]">
           {headerLinks.map((link) => (

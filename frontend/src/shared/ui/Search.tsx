@@ -2,7 +2,7 @@ import { SearchIcon } from "lucide-react";
 
 export const Search = () => {
   return (
-    <div className="relative">
+    <div className="w-full relative">
       <input
         type="text"
         placeholder="Search Twitter"

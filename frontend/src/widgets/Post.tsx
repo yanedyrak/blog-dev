@@ -9,7 +9,7 @@ import {
 import { VerifiedProfileSVG } from "../shared/svg/VerifiedProfileSVG";
 export const Post = () => {
   return (
-    <div className="flex gap-3 p-5 border-[1px] max-w-96 border-white">
+    <div className="flex gap-3 p-5 border-b-[1px]  border-white border-opacity-30">
       <div className="flex-shrink-0 w-10 h-10 bg-red-500 rounded-full"></div>
       <div className="flex flex-col flex-grow">
         <div className="flex gap-2 items-center">
@@ -18,7 +18,12 @@ export const Post = () => {
           <p className="text-gray-400">@johan</p>
           <p className="text-gray-400">9m</p>
         </div>
-        <p className="text-white font-bold">Итоши Йохан самый крутой</p>
+        <p className="text-white text-sm">
+          Итоши Йохан Итоши Йохан Итоши Йохан Итоши Йохан Итоши Йохан Итоши
+          Йохан Итоши Йохан Итоши Йохан Итоши Йохан Итоши Йохан Итоши Йохан
+          Итоши Йохан Итоши Йохан Итоши Йохан Итоши Йохан Итоши Йохан Итоши
+          Йохан Итоши Йохан
+        </p>
         <div className="flex justify-between items-center mt-3">
           <button className="flex gap-1 items-center">
             <MessageCircle size={20} color="gray" />

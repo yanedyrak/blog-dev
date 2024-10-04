@@ -3,7 +3,7 @@ import { LinkWithBlueDecoration } from "../shared/ui/LinkWithBlueDecoration";
 
 export const NotificationHead = () => {
   return (
-    <div className="flex-grow px-5 pt-5 border-b-[1px] border-white border-opacity-30">
+    <div className="px-5 pt-5 border-b-[1px] border-white border-opacity-30">
       <div className="flex justify-between">
         <h3 className="text-xl font-bold text-white">Notifications</h3>
         <button>
