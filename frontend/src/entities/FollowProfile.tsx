@@ -9,7 +9,7 @@ export const FollowProfile = () => {
             <h4 className="text-lg leading-none text-white">Bill Gates</h4>
             <VerifiedProfileSVG />
           </div>
-          <p className="text-sm font-bold text-zinc-600">@Bill Gates</p>
+          <p className="text-sm font-light text-zinc-500">@Bill Gates</p>
         </div>
       </div>
       <button className="px-5 py-1 bg-white border-none rounded-3xl font-bold duration-300 hover:brightness-90 ">

@@ -1,7 +1,7 @@
 export const ProfileHeadLinks = [
   {
     title: "Posts",
-    path: "/",
+    path: "/profile",
   },
   {
     title: "Replies",

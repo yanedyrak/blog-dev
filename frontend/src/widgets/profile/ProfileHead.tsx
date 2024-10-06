@@ -1,12 +1,12 @@
 import { ArrowLeft, CalendarDays } from "lucide-react";
-import { VerifiedProfileSVG } from "../shared/svg/VerifiedProfileSVG";
-import { ProfileHeadLinks } from "../shared/constants/ProfileHeadLinks";
+import { VerifiedProfileSVG } from "../../shared/svg/VerifiedProfileSVG";
+import { ProfileHeadLinks } from "../../shared/constants/ProfileHeadLinks";
 
-import { LinkWithBlueDecoration } from "../shared/ui/LinkWithBlueDecoration";
+import { LinkWithBlueDecoration } from "../../shared/ui/LinkWithBlueDecoration";
 
 export const ProfileHead = () => {
   return (
-    <div className="flex flex-grow flex-col border-b-[1px] border-white border-opacity-30 overflow-hidden ">
+    <div className="flex flex-grow flex-col border-x-[1px] border-b-[1px] border-white border-opacity-30 overflow-hidden ">
       <div className="bg-black flex px-5 py-2 gap-5 flex-center">
         <button className="p-2 rounded-full duration-300 hover:bg-zinc-900">
           <ArrowLeft color="white" />
@@ -25,7 +25,7 @@ export const ProfileHead = () => {
             Edit profile
           </button>
         </div>
-        <div className="p-5">
+        <div className="px-5 pt-5">
           <div className="flex gap-4 items-center">
             <h3 className="text-2xl font-bold text-white leading-none">
               johan
@@ -53,15 +53,15 @@ export const ProfileHead = () => {
               <p className="text-gray-400">Followers</p>
             </div>
           </div>
-          <div className="flex mt-5">
-            {ProfileHeadLinks.map((link, index) => (
-              <LinkWithBlueDecoration
-                key={index}
-                adress={link.path}
-                title={link.title}
-              />
-            ))}
-          </div>
+        </div>
+        <div className="flex">
+          {ProfileHeadLinks.map((link, index) => (
+            <LinkWithBlueDecoration
+              key={index}
+              adress={link.path}
+              title={link.title}
+            />
+          ))}
         </div>
       </div>
     </div>

@@ -1,8 +1,8 @@
 import { WhoToFollow } from "../entities/WhoToFollow";
 import { Search } from "../shared/ui/Search";
-import { BookmarksHead } from "../widgets/BookmarksHead";
+import { BookmarksHead } from "../widgets/bookmarks/BookmarksHead";
 import { SubscribeArea } from "../widgets/SubscribeArea";
-import { BookmarksContent } from "../widgets/BookmarksContent";
+import { BookmarksContent } from "../widgets/bookmarks/BookmarksContent";
 export const BookmarksPage = () => {
   return (
     <>
